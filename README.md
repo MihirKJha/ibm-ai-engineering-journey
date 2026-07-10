@@ -225,4 +225,6 @@ If you're interested in Enterprise AI, Cloud Architecture, Backend Engineering, 
 
 **Enterprise AI Engineering**
 
+**https://www.linkedin.com/newsletters/enterprise-ai-engineering-7479222208079319041/**
+
 Sharing practical insights on Enterprise AI, Cloud Architecture, Backend Engineering, LLMs, RAG, Agentic AI, and production-ready AI systems.
