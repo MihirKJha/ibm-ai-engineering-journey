@@ -1,138 +1,228 @@
-# IBM AI Engineering Learning Journey
+# IBM AI Engineering Journey
 
-This repository documents my learning journey through the IBM AI Engineering Professional Certificate on Coursera.
-
-The repository contains hands-on labs, module assessment projects, notes, and experiments covering:
-
-- Machine Learning
-- Deep Learning
-- Neural Networks
-- TensorFlow & Keras
-- PyTorch
-- Generative AI
-- Retrieval-Augmented Generation (RAG)
-- LangChain
+> A structured learning journey through the IBM AI Engineering Professional Certificate on Coursera, documenting hands-on labs, projects, notes, and practical implementations in Machine Learning, Deep Learning, and Generative AI.
 
 ---
 
-# About Me
+## About This Repository
 
-I am a software architect and backend engineer with 14+ years of experience building scalable enterprise applications, cloud-native microservices, and distributed systems.
+This repository documents my journey through the **IBM AI Engineering Professional Certificate**.
 
-Through this learning journey, I am expanding my expertise into:
+As a backend engineer with **14+ years of experience** building enterprise applications, cloud-native microservices, and distributed systems, I created this repository to consolidate my learning while transitioning toward **Cloud AI Architecture**.
 
-- Applied AI & Machine Learning
-- Deep Learning
-- Generative AI Systems
-- AI-powered Cloud Applications
-- Production-grade AI Architecture
+Rather than simply completing a certification, my goal is to build a strong foundation that connects:
 
-My long-term goal is to build scalable AI-enabled enterprise platforms by combining backend engineering, cloud architecture, and AI/ML systems.
+* ☁️ Cloud Architecture
+* ⚙️ Backend Engineering
+* 🤖 Machine Learning
+* 🧠 Deep Learning
+* ✨ Generative AI
+* 🔎 Retrieval-Augmented Generation (RAG)
+* 🤝 Agentic AI
+
+This repository will continue to evolve as selected learning projects are transformed into production-ready AI solutions.
+
+---
+
+# Learning Roadmap
+
+```
+Backend & Cloud Engineering
+          │
+          ▼
+IBM AI Engineering Professional Certificate
+          │
+          ▼
+Machine Learning
+Deep Learning
+TensorFlow
+PyTorch
+Generative AI
+RAG
+          │
+          ▼
+Production AI Projects
+          │
+          ▼
+Cloud AI Architect
+```
 
 ---
 
 # Repository Structure
 
-```text
-ibm-ai-engineering-coursework/
+```
+ibm-ai-engineering-journey/
 
-01-machine-learning/
-02-intro-deep-learning/
-03-keras-tensorflow/
-04-pytorch-basics/
-05-deep-learning-pytorch/
-06-genai-rag-langchain/
-07-ai-capstone/
+├── learning/
+│   ├── machine-learning/
+│   ├── deep-learning/
+│   │   ├── intro-neural-networks/
+│   │   ├── tensorflow-keras/
+│   │   ├── pytorch-basics/
+│   │   └── deep-learning-pytorch/
+│   ├── generative-ai/
+│   │   └── rag-langchain/
+│   └── capstone/
+│
+├── projects/
+├── notes/
+└── assets/
 ```
 
-Each module may contain:
+---
 
-- Jupyter notebooks
-- Assessment projects
-- Notes and learnings
-- Experiments and exercises
+# Featured Highlights
+
+⭐ **IBM AI Engineering Professional Certificate**
+
+A comprehensive professional program covering Machine Learning, Deep Learning, Neural Networks, TensorFlow, PyTorch, and Generative AI.
 
 ---
 
-# Topics Covered
+⭐ **AI Capstone Project**
+
+A complete deep learning project demonstrating end-to-end model development, training, evaluation, and practical implementation.
+
+---
+
+⭐ **Generative AI with RAG & LangChain**
+
+Hands-on implementation of Retrieval-Augmented Generation (RAG) applications using LangChain and modern LLM workflows.
+
+---
+
+# Learning Modules
 
 ## Machine Learning
-- Supervised Learning
-- Regression
-- Classification
-- Model Evaluation
-- Feature Engineering
+
+* Supervised Learning
+* Regression
+* Classification
+* Model Evaluation
+* Feature Engineering
+
+---
 
 ## Deep Learning
-- Neural Networks
-- Forward & Backpropagation
-- Activation Functions
-- Optimization Techniques
+
+* Neural Networks
+* Backpropagation
+* CNNs
+* Model Optimization
+* Training Strategies
+
+---
 
 ## TensorFlow & Keras
-- Deep Learning Model Development
-- CNNs
-- Model Training & Evaluation
+
+* Model Development
+* Deep Learning Workflows
+* Image Classification
+* Model Evaluation
+
+---
 
 ## PyTorch
-- Tensor Operations
-- Neural Network Development
-- Training Pipelines
-- Deep Learning Workflows
+
+* Tensor Operations
+* Neural Network Development
+* Training Pipelines
+* Deep Learning Applications
+
+---
 
 ## Generative AI
-- Retrieval-Augmented Generation (RAG)
-- LangChain
-- Prompt Engineering
-- LLM-based Applications
+
+* Prompt Engineering
+* LangChain
+* Retrieval-Augmented Generation (RAG)
+* LLM Applications
 
 ---
 
-# Learning Approach
+# What's Inside
 
-This repository is intentionally organized as a learning workspace rather than a polished production portfolio.
+This repository includes:
 
-The focus during this phase is to:
-
-- Build strong AI/ML fundamentals
-- Complete hands-on exercises
-- Understand practical deep learning workflows
-- Explore modern Generative AI concepts
-
-Selected projects may later evolve into production-grade portfolio projects with:
-- APIs
-- Cloud deployment
-- Dockerization
-- MLOps workflows
-- Enterprise architecture patterns
+* 📘 Course notebooks
+* 🧪 Hands-on labs
+* 📝 Module assessment projects
+* 📚 Learning notes
+* 🧠 AI Capstone Project
+* 🔎 RAG + LangChain implementation
+* 📈 Experiments and exercises
 
 ---
 
-# Tools & Technologies
+# Current Focus
 
-- Python
-- JupyterLab
-- NumPy
-- Pandas
-- Scikit-learn
-- TensorFlow
-- Keras
-- PyTorch
-- LangChain
+I'm currently expanding my expertise in:
 
----
-
-# Future Goals
-
-- Build production-grade AI applications
-- Develop cloud-native AI systems
-- Explore MLOps and AI platform engineering
-- Create enterprise AI architecture projects
-- Integrate AI into scalable backend systems
+* Enterprise AI Engineering
+* Cloud AI Architecture
+* AI Platform Design
+* Production AI Systems
+* Agentic AI
+* MLOps
 
 ---
 
-# Connect With Me
+# Future Plans
+
+Selected learning projects from this repository will gradually evolve into dedicated repositories featuring:
+
+* REST APIs
+* Cloud deployment
+* Docker
+* Kubernetes
+* Infrastructure as Code
+* CI/CD
+* Architecture diagrams
+* Production-ready documentation
+
+---
+
+# Tech Stack
+
+### Languages
+
+* Python
+
+### AI & ML
+
+* Scikit-learn
+* TensorFlow
+* Keras
+* PyTorch
+
+### Generative AI
+
+* LangChain
+* Retrieval-Augmented Generation (RAG)
+
+### Development
+
+* Jupyter Notebook
+* Git
+* GitHub
+
+---
+
+# Connect
+
+If you're interested in Enterprise AI, Cloud Architecture, Backend Engineering, or Generative AI, feel free to explore the repository, share feedback, or connect with me.
+
+## GitHub
+
+**https://github.com/MihirKJha**
 
 ## LinkedIn
-https://www.linkedin.com/in/mihirkrjha/
+
+**https://www.linkedin.com/in/mihirkrjha/**
+
+## Newsletter
+
+**Enterprise AI Engineering**
+
+Sharing practical insights on Enterprise AI, Cloud Architecture, Backend Engineering, LLMs, RAG, Agentic AI, and production-ready AI systems.
