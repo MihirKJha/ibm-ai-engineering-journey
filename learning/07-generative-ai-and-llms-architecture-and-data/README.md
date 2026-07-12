@@ -1,9 +1,11 @@
-# Deep Learning with PyTorch
+# Generative AI and LLMs: Architecture and Data
 
-> Hands-on implementation of Deep Learning models using **PyTorch** completed as part of the **IBM AI Engineering Professional Certificate** on **Coursera**.
+> A foundational exploration of **Generative AI**, **Large Language Models (LLMs)**, **Transformer architecture**, **tokenization**, and **NLP data preparation**, completed as part of the **IBM AI Engineering Professional Certificate** on **Coursera**.
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red)
+![Transformers](https://img.shields.io/badge/Transformers-LLMs-success)
+![Generative AI](https://img.shields.io/badge/Generative%20AI-Foundations-orange)
 ![IBM AI Engineering](https://img.shields.io/badge/IBM-AI%20Engineering-blue)
 ![Coursera](https://img.shields.io/badge/Coursera-Learning-blueviolet)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
@@ -12,52 +14,67 @@
 
 # 📖 Overview
 
-This directory contains the hands-on labs, practice project, and final project completed during the **Deep Learning with PyTorch** course from the **IBM AI Engineering Professional Certificate** on **Coursera**.
+This module introduces the fundamental concepts behind **Generative AI** and **Large Language Models (LLMs)**.
 
-Building upon the fundamentals introduced in the previous PyTorch course, this module focuses on designing and training deep neural networks for classification and computer vision tasks. It covers activation functions, multi-layer neural networks, optimization techniques, weight initialization, regularization, batch normalization, convolutional neural networks (CNNs), and image classification using PyTorch.
+It explores the evolution of generative AI architectures, including **Recurrent Neural Networks (RNNs)**, **Transformers**, **Generative Adversarial Networks (GANs)**, **Variational Autoencoders (VAEs)**, and **Diffusion Models**, while providing a high-level understanding of modern **Foundation Models**.
 
-The course concludes with a complete **Fashion MNIST Image Classification** project, demonstrating an end-to-end Deep Learning workflow using Convolutional Neural Networks.
-
----
-
-# 🎯 Skills Gained
-
-During this course, I gained practical experience with:
-
-- Deep Neural Networks
-- Multi-Layer Perceptrons (MLP)
-- Binary & Multi-Class Classification
-- Softmax Regression
-- Cross Entropy Loss
-- Activation Functions
-- Forward Propagation
-- Backpropagation
-- Hidden Layers
-- Multi-Class Neural Networks
-- PyTorch `Sequential` API
-- PyTorch `ModuleList`
-- Dropout Regularization
-- Weight Initialization
-- Xavier Initialization
-- He Initialization
-- Momentum Optimization
-- Batch Normalization
-- Convolutional Neural Networks (CNN)
-- Convolution Operations
-- Multi-Channel Convolution
-- Max Pooling
-- Fashion MNIST Image Classification
-- Deep Learning Model Training & Evaluation
+The module also covers essential **Natural Language Processing (NLP)** data preparation techniques, including **tokenization**, **datasets**, and **data loaders**, which form the foundation of training and fine-tuning Large Language Models.
 
 ---
 
-# 🛠 Technologies Used
+# 🎯 Learning Objectives
+
+Throughout this module, I learned to:
+
+- Understand the evolution of Generative AI.
+- Explain the architecture of modern Large Language Models.
+- Compare major Generative AI architectures.
+- Explore popular Generative AI libraries and frameworks.
+- Understand NLP tokenization techniques.
+- Implement tokenization using Python libraries.
+- Build datasets and data loaders for NLP workflows.
+- Prepare textual data for Large Language Model training.
+
+---
+
+# 🧠 Architecture Concepts Covered
+
+This module introduces the foundational concepts behind modern Generative AI systems.
+
+Topics include:
+
+- Generative AI
+- Foundation Models
+- Large Language Models (LLMs)
+- Transformer Architecture (Overview)
+- Recurrent Neural Networks (RNNs)
+- Generative Adversarial Networks (GANs)
+- Variational Autoencoders (VAEs)
+- Diffusion Models
+- Tokenization
+- Word Tokenization
+- Character Tokenization
+- Subword Tokenization
+- WordPiece
+- SentencePiece
+- Unigram Tokenization
+- Special Tokens
+- Dataset
+- DataLoader
+- NLP Data Pipeline
+
+---
+
+# 🛠 Technologies & Libraries
 
 - Python
 - PyTorch
-- Torchvision
-- NumPy
-- Matplotlib
+- Hugging Face
+- TensorFlow
+- LangChain
+- Pydantic
+- NLTK
+- spaCy
 - Jupyter Notebook
 
 ---
@@ -65,213 +82,125 @@ During this course, I gained practical experience with:
 # 📂 Repository Structure
 
 ```text
-deep-learning-with-pytorch/
+07-generative-ai-and-llms-architecture-and-data/
 │
 ├── README.md
-└── notebooks/
+├── notebooks/
+└── dataset/                  # Optional (if included)
 ```
 
 ---
 
-# 🧠 Deep Learning Training Pipeline
-
-One of the key learning outcomes of this course is understanding how Deep Learning models are trained and optimized.
+# 🏗 Generative AI Learning Journey
 
 ```text
-Dataset
-    │
-    ▼
-DataLoader
-    │
-    ▼
-Neural Network
-    │
-    ▼
-Forward Propagation
-    │
-    ▼
-Loss Function
-    │
-    ▼
-Backpropagation
-    │
-    ▼
-Optimizer
-    │
-    ▼
-Weight Update
-    │
-    ▼
-Validation
-    │
-    ▼
-Prediction
+Traditional NLP
+        │
+        ▼
+Deep Learning
+        │
+        ▼
+Generative AI
+        │
+        ▼
+Foundation Models
+        │
+        ▼
+Large Language Models
+        │
+        ▼
+Tokenization
+        │
+        ▼
+Dataset & DataLoader
+        │
+        ▼
+LLM Training
 ```
-
-During this course, different techniques were explored to improve model convergence, stability, and generalization, including:
-
-- Cross Entropy Loss
-- Softmax
-- Activation Functions
-- Dropout
-- Weight Initialization
-- Momentum
-- Batch Normalization
 
 ---
 
 # 📚 Notebook Guide
 
-## 🔹 Classification Fundamentals
-
-| Notebook | Topic |
-|-----------|--------------------------------------------|
-| 01 | Bad Initialization in Logistic Regression |
-| 02 | Cross Entropy Logistic Regression |
-| 03 | Softmax in One Dimension |
-| 04 | Predicting MNIST using Softmax |
-
----
-
-## 🔹 Neural Network Fundamentals
-
-| Notebook | Topic |
-|-----------|--------------------------------------------|
-| 05 | Activation Functions |
-| 06 | Simple One Hidden Layer Neural Network |
-| 07 | Hidden Layer Architecture |
-| 08 | Neural Networks with More Hidden Neurons |
-| 09 | Multi-Dimensional Neural Networks |
-| 10 | Multi-Class One Layer Neural Network |
-| 11 | Deep Neural Network (MNIST) |
-| 12 | Multi-Class Neural Network using ModuleList |
-
----
-
-## 🔹 Model Training & Optimization
-
-| Notebook | Topic |
-|-----------|--------------------------------------------|
-| 13 | Dropout in Regression |
-| 14 | Dropout for Classification |
-| 15 | Same Weight Initialization |
-| 16 | Xavier Initialization |
-| 17 | He Initialization |
-| 18 | Momentum Optimization |
-| 19 | Neural Networks with Momentum |
-| 20 | Batch Normalization |
-
----
-
-## 🔹 Computer Vision
-
-| Notebook | Topic |
-|-----------|--------------------------------------------|
-| 21 | Introduction to Convolution |
-| 22 | Activation Functions & Max Pooling |
-| 23 | Multiple Channel Convolution |
-| 24 | Convolutional Neural Network Example |
-| 25 | CNN for Small Images |
-| 26 | CNN Mini-Batch Training |
-
----
-
-## 🚀 Projects
-
 | Notebook | Description |
-|-----------|--------------------------------------------|
-| ⭐ 27 Practice Project | Convolutional Neural Network for Image Classification |
-| ⭐ 28 Final Project | Fashion MNIST Image Classification using CNN |
+|-----------|-------------|
+| 01 | Exploring Generative AI Libraries |
+| 02 | Implementing Tokenization |
+| 03 | Creating an NLP Data Loader |
 
 ---
 
-# ⭐ Featured Notebooks
+# ⭐ Featured Notebook
 
-If you're exploring this module for the first time, I recommend starting with:
+If you're exploring this repository for the first time, I recommend starting with:
 
-- ⭐ Cross Entropy Logistic Regression
-- ⭐ Activation Functions
-- ⭐ Deep Neural Network (MNIST)
-- ⭐ Xavier & He Initialization
-- ⭐ Batch Normalization
-- ⭐ Introduction to Convolution
-- ⭐ Fashion MNIST Image Classification
+⭐ **02 – Implementing Tokenization**
+
+This notebook introduces one of the most fundamental concepts in Large Language Models. Tokenization is the first step in converting natural language into a format that Transformer-based models can process.
 
 ---
 
-# 🏆 Final Project Highlights
+# 🚀 Key Concepts Learned
 
-## 👕 Fashion MNIST Image Classification
+## Generative AI
 
-The capstone project of this course focuses on building a **Convolutional Neural Network (CNN)** to classify clothing images from the Fashion MNIST dataset.
-
-### Project Objectives
-
-- Build a CNN using PyTorch.
-- Train a Deep Learning model for image classification.
-- Apply convolution and pooling layers.
-- Optimize model performance.
-- Evaluate prediction accuracy.
-- Understand feature extraction using CNNs.
-
-### Deep Learning Pipeline
-
-```text
-Fashion MNIST Images
-        │
-        ▼
-Image Preprocessing
-        │
-        ▼
-Convolution Layers
-        │
-        ▼
-Activation Functions
-        │
-        ▼
-Pooling Layers
-        │
-        ▼
-Flatten
-        │
-        ▼
-Fully Connected Layers
-        │
-        ▼
-Prediction
-        │
-        ▼
-Evaluation
-```
-
-### Skills Demonstrated
-
-- Computer Vision
-- CNN Architecture
-- Image Classification
-- Feature Extraction
-- Model Optimization
-- Batch Training
-- Deep Learning with PyTorch
+- Evolution of Generative AI
+- Predictive AI vs Generative AI
+- Foundation Models
+- Large Language Models
+- Real-world applications
 
 ---
 
-# 💡 Key Takeaways
+## Generative AI Architectures
 
-By completing this course, I developed practical experience in:
+Studied the major architectures powering modern AI systems:
 
-- Building Deep Neural Networks using PyTorch.
-- Understanding Softmax Regression and Cross Entropy Loss.
-- Designing multi-layer neural network architectures.
-- Applying activation functions for non-linear learning.
-- Training multi-class classification models.
-- Improving model convergence using Xavier and He Initialization.
-- Preventing overfitting with Dropout.
-- Accelerating training using Momentum Optimization.
-- Stabilizing deep networks with Batch Normalization.
-- Understanding convolution and feature extraction.
-- Building Convolutional Neural Networks for image classification.
-- Applying Deep Learning concepts in a complete Fashion MNIST classification project.
+- Recurrent Neural Networks (RNNs)
+- Transformers
+- Generative Adversarial Networks (GANs)
+- Variational Autoencoders (VAEs)
+- Diffusion Models
+
+---
+
+## Tokenization
+
+Learned multiple tokenization approaches:
+
+- Word Tokenization
+- Character Tokenization
+- Subword Tokenization
+- WordPiece
+- SentencePiece
+- Unigram Tokenization
+- Special Tokens
+
+---
+
+## NLP Data Preparation
+
+Implemented the preprocessing pipeline required for Large Language Models:
+
+- Dataset creation
+- DataLoader implementation
+- Batch processing
+- Data preprocessing
+
+---
+
+# 💡 Key Learnings
+
+Through this module I gained practical understanding of:
+
+- The evolution of Generative AI.
+- The architecture behind modern Large Language Models.
+- The role of Foundation Models.
+- How textual data is prepared for LLM training.
+- Different tokenization strategies.
+- Building efficient NLP data pipelines.
+- Using PyTorch datasets and data loaders.
+- Popular libraries used throughout the Generative AI ecosystem.
 
 ---
 
@@ -279,28 +208,49 @@ By completing this course, I developed practical experience in:
 
 For concise revision notes and interview-focused summaries, see:
 
-- Neural Networks
-- Deep Learning Fundamentals
-- Model Training and Optimization
-- Computer Vision
-- PyTorch
+- Generative AI Fundamentals
+- Transformer Architecture
+- LLM Data Preparation
 
 Located under:
 
 ```text
-../../notes/
+../../notes/04-generative-ai-foundations/
 ```
+
+---
+
+# 🚀 Key Takeaways
+
+- Generative AI enables machines to generate text, images, audio, and other content from learned data distributions.
+- Large Language Models are Foundation Models trained on massive text corpora containing billions of parameters.
+- Transformers have become the dominant architecture for modern Generative AI.
+- Tokenization is a critical preprocessing step that converts natural language into model-understandable tokens.
+- Efficient datasets and data loaders enable scalable training pipelines for Large Language Models.
+- Hugging Face, PyTorch, TensorFlow, LangChain, and NLP libraries form the foundation of today's Generative AI ecosystem.
 
 ---
 
 # 📌 About
 
-This directory is part of my **IBM AI Engineering Journey**, where I document my hands-on learning through the **IBM AI Engineering Professional Certificate** on **Coursera**.
+This module is part of my **IBM AI Engineering Journey**, documenting my progression from **Machine Learning** and **Deep Learning** into **Generative AI** and **Large Language Models** through the **IBM AI Engineering Professional Certificate** on **Coursera**.
 
-The objective of this repository is to:
+The goal of this repository is to:
 
-- Document my learning journey.
-- Showcase practical Deep Learning implementations using PyTorch.
-- Build production-oriented AI engineering skills.
-- Provide a structured reference for software engineers and AI practitioners.
-- Share practical Deep Learning resources with the engineering community.
+- Document my AI engineering learning journey.
+- Build a strong conceptual foundation in Generative AI.
+- Understand modern LLM architectures.
+- Prepare for advanced topics such as Retrieval-Augmented Generation (RAG), AI Agents, and Enterprise AI systems.
+- Share reusable learning resources with the engineering community.
+
+---
+
+# References
+
+- IBM AI Engineering Professional Certificate (Coursera)
+- Hugging Face Documentation
+- PyTorch Documentation
+- TensorFlow Documentation
+- NLTK Documentation
+- spaCy Documentation
+- Hands-on Labs from this repository
