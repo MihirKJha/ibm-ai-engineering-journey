@@ -49,7 +49,7 @@ Rule-Based NLP
 Statistical Language Models
         │
         ▼
-N-Grams
+N-Gram Models
         │
         ▼
 Feed Forward Neural Language Models
@@ -58,18 +58,26 @@ Feed Forward Neural Language Models
 RNN / LSTM
         │
         ▼
-Sequence-to-Sequence
+Sequence-to-Sequence (Seq2Seq)
         │
         ▼
-Transformers
+Transformer
         │
-        ▼
-Large Language Models
+        ├───────────────┬───────────────┐
+        ▼               ▼               ▼
+     Encoder         Decoder     Encoder–Decoder
+     (BERT)           (GPT)        (T5/BART)
+        │               │               │
+        └───────────────┴───────────────┘
+                        │
+                        ▼
+              Foundation Models
+                        │
+                        ▼
+             Large Language Models (LLMs)
 ```
 
-Each generation improved the ability to capture context and language semantics.
-
----
+Each generation improved contextual understanding, scalability, and language representation, ultimately leading to today's Foundation Models and Large Language Models.
 
 # 4. Language Modeling Pipeline
 
@@ -342,7 +350,105 @@ Minimize prediction error while maximizing the probability of correct next-token
 
 ---
 
-# 13. Evaluation Metrics
+---
+
+# 13. Modern Language Modeling Objectives
+
+Modern Transformer-based language models are trained using different objectives depending on their architecture.
+
+---
+
+## Causal Language Modeling (CLM)
+
+Used by **Decoder-Only** models such as GPT.
+
+Objective:
+
+Predict the next token using only previously generated tokens.
+
+Example:
+
+```
+Deep Learning powers
+
+↓
+
+Predict
+
+↓
+
+AI
+```
+
+Applications:
+
+- Chatbots
+- Text Generation
+- Code Generation
+- AI Assistants
+
+---
+
+## Masked Language Modeling (MLM)
+
+Used by **Encoder-Only** models such as BERT.
+
+Random tokens are masked during training.
+
+Example:
+
+```
+Machine <mask> is powerful.
+
+↓
+
+Learning
+```
+
+Applications:
+
+- Language Understanding
+- Semantic Search
+- Classification
+- Question Answering
+
+---
+
+## Sequence-to-Sequence Language Modeling
+
+Used by **Encoder–Decoder** models.
+
+The model learns to transform one sequence into another.
+
+Example:
+
+```
+English
+
+↓
+
+French
+```
+
+Applications:
+
+- Translation
+- Summarization
+- Document Transformation
+
+---
+
+## Comparing Modern Language Models
+
+| Architecture | Training Objective | Typical Models | Primary Applications |
+|--------------|-------------------|----------------|----------------------|
+| Encoder | Masked Language Modeling (MLM) | BERT, RoBERTa | Language Understanding |
+| Decoder | Causal Language Modeling (CLM) | GPT, Llama | Text Generation |
+| Encoder–Decoder | Sequence-to-Sequence Learning | T5, BART | Translation & Summarization |
+
+---
+
+# 14. Evaluation Metrics
 
 ## Cross Entropy Loss
 
@@ -386,7 +492,7 @@ Balances Precision and Recall.
 
 ---
 
-# 14. Applications
+# 15. Applications
 
 Language Models power:
 
@@ -401,7 +507,7 @@ Language Models power:
 
 ---
 
-# 15. Production Perspective
+# 16. Production Perspective
 
 Modern enterprise language modeling pipeline:
 
@@ -424,7 +530,7 @@ Inference
 Application
 ```
 
-Today's LLM pipeline:
+Today's Transformer-based language modeling pipeline:
 
 ```text
 Prompt
@@ -433,21 +539,24 @@ Prompt
 Tokenizer
       │
       ▼
-Embeddings
+Embedding Layer
       │
       ▼
 Transformer
       │
       ▼
-Next Token Prediction
+Task Head
       │
       ▼
-Generated Response
+Prediction / Generation
+      │
+      ▼
+Application
 ```
 
 ---
 
-# 16. Best Practices
+# 17. Best Practices
 
 - Use sufficient and diverse training data.
 - Reuse pretrained language models when possible.
@@ -459,7 +568,7 @@ Generated Response
 
 ---
 
-# 17. Common Challenges
+# 18. Common Challenges
 
 - Data sparsity
 - Long-range dependencies
@@ -471,7 +580,7 @@ Generated Response
 
 ---
 
-# 18. Classical Language Models vs LLMs
+# 19. Classical Language Models vs LLMs
 
 | Classical Language Models | Modern LLMs |
 |---------------------------|-------------|
@@ -484,7 +593,7 @@ Generated Response
 
 ---
 
-# 19. Interview Questions
+# 20. Interview Questions
 
 ### Beginner
 
@@ -513,7 +622,7 @@ Generated Response
 
 ---
 
-# 20. 🚀 Quick Revision Sheet
+# 21. 🚀 Quick Revision Sheet
 
 ## Evolution
 
@@ -580,12 +689,11 @@ Next Token Prediction
 
 ---
 
-## Sequence Models
+## Modern Language Models
 
-- RNN
-- LSTM
-- GRU
-- Seq2Seq
+- Encoder Models (BERT)
+- Decoder Models (GPT)
+- Encoder–Decoder Models (T5, BART)
 
 ---
 
@@ -617,14 +725,17 @@ Next Token Prediction
 
 ---
 
-# 21. Key Takeaways
+# 22. Key Takeaways
 
 - Language Models estimate the probability of word sequences to generate coherent text.
 - N-Gram models introduced statistical language modeling but struggled with long-range context and data sparsity.
 - Feed Forward Neural Language Models improved language representation using learned embeddings.
-- Sequence-to-Sequence architectures enabled complex tasks such as translation and summarization through encoder-decoder learning.
-- Modern Transformers replaced recurrent architectures with self-attention, enabling efficient training on massive datasets.
-- Today's Large Language Models build upon decades of research in statistical NLP, neural language modeling, and sequence learning.
+- Sequence-to-Sequence architectures introduced encoder–decoder learning for translation and summarization.
+- Modern Transformers replaced recurrent architectures with self-attention, enabling efficient parallel training on massive datasets.
+- Today's language models are primarily based on three Transformer architectures: Encoder (BERT), Decoder (GPT), and Encoder–Decoder (T5/BART).
+- GPT uses Causal Language Modeling (CLM) for autoregressive text generation.
+- BERT uses Masked Language Modeling (MLM) for bidirectional language understanding.
+- Foundation Models and Large Language Models build upon these architectures to power modern Generative AI systems.
 
 ---
 
