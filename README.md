@@ -95,10 +95,10 @@ ibm-ai-engineering-journey/
 ├── notes/
 │
 ├── notes/
-│   ├── 01-machine-learning/
-│   ├── 02-deep-learning/
-    └── 03-generative-ai/
-│   └── 04-rag-and-ai-agents/
+│   ├── machine-learning/
+│   ├── deep-learning/
+    └── generative-ai/
+│   └── rag-and-ai-agents/
 │
 └── README.md
 ```
